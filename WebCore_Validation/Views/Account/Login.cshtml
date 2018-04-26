@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+<br/>
+<h2>Account created Successfully</h2>
+<br/>
+
+@{ 
+    if (!string.IsNullOrEmpty((string)TempData["Name"]))
+    {
+        <h3>Welcome @TempData["Name"]!</h3>
+    }
+}
